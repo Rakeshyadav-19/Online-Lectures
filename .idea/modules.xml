@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Freecodecamp.iml" filepath="$PROJECT_DIR$/Freecodecamp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Online-Lectures.iml" filepath="$PROJECT_DIR$/.idea/Online-Lectures.iml" />
     </modules>
   </component>
 </project>
