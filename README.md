@@ -1,2 +1,2 @@
 # c_codewWthHarry
-This repo is codes I have done while learning c from basic.
+This repo is codes I have done while learning Kotlin.
