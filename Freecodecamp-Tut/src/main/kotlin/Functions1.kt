@@ -15,7 +15,7 @@ fun main()
     }
 }
 
-//Function passing arguments
+//Function with parameters.
 fun sayHello(name: String,age: Int)
 {
     println("Hello, World!!!")
