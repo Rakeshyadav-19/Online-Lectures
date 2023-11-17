@@ -22,6 +22,5 @@ fun main() {
         {
             println("It is Character $i")
         }
-
     }
 }

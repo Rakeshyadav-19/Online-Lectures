@@ -19,6 +19,7 @@ fun main()
     println("Total even numbers are: $j")
 }
 
+
 //freeCodeCamp
 /*
 fun main()
