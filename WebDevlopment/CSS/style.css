@@ -1,5 +1,9 @@
-nav{
+/*Navigation main*/
+.main-nav{
     background-color: #f7f7f8;
+}
+.font{
+ font-family: sans-serif;
 }
 a{
     font-size: 20px;
@@ -7,3 +11,9 @@ a{
     color: #3c404a;
     text-decoration: none;
 }
+.product{
+    /*      shape  px      colour*/
+    border: solid 3px rebeccapurple;
+    border-radius: 28px;
+}
+#selected{color: purple;}
