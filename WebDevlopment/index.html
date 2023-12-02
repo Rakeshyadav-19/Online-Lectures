@@ -4,10 +4,11 @@
     <link rel="stylesheet" href="CSS/style.css">
     <title>My page</title>
 </head>
-<body class="font">
-    <!--Comment-->
+<body>
+    <!--  Logo-->
     <img src="Images/brand-logo.svg" width="150" alt="My logo">
-    <!--navigatioon bar -->
+    <!--  Header -->
+    <hr>
     <nav class="main-nav">
         <a href="index.html" id="selected">Home</a>
         <a href="profile.html">Profile</a>
@@ -16,18 +17,44 @@
         <a href="signup.html">Signup</a>
     </nav>
     <hr>
-    <h1 style="color: rebeccapurple; font-family:Arial;">This is my Website,</h1>
-    <p>Welcome<b>To my site</b></p>
+    <div id="intro">   
+         <!--   Main Content    -->
+        <h1 style="color: purple; font-family:Arial;">
+            This is my Website,
+        </h1>
+        
+        <p>
+            Welcome<b>To my site</b>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis vel nihil magni unde asperiores dolor corrupti pariatur repellat inventore odit quasi repudiandae non ut accusantium, autem deserunt. Totam, debitis nostrum.
+        </p>
+        
+        <!-- We included video here -->
+        <video controls width="450">
+            <source src="videos/intro-video.mp4">
+            <a href="videos/intro-video.mp4">mp4</a>
+        </video></div>
+
+    <!-- Category -->
     <nav>
         <a>Suit</a>
         <a>Shirt</a>
         <a>Pants</a>
         <a>Shoes</a>
     </nav>
+    <div class="product-card">
+         <!-- Product image  -->
+    <img class="image" src="Images/suit-1.png" alt="suit-1">
+    <!-- Product Details  -->
+    <h2>photo</h2>
+    This is  our new product.Be sure to give it a  like
+    <br>
+    <a href="">See more</a>
+    </div>
 
-    <img class="product" src="Images/suit-1.png" alt="suit-1">
-    <h2>Suit photo</h2>
-    <p>This is  our new product</p>
-    <p><a href="">See more</a></p>
+    <!-- Footer here -->
+    <footer>
+        <h2>This is my footer</h2>
+    </footer>
+   
 </body>
 </html>

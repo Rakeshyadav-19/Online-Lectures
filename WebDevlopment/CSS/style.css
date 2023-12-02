@@ -2,8 +2,9 @@
 .main-nav{
     background-color: #f7f7f8;
 }
-.font{
+body{
  font-family: sans-serif;
+ margin: 0px;
 }
 a{
     font-size: 20px;
@@ -11,9 +12,37 @@ a{
     color: #3c404a;
     text-decoration: none;
 }
-.product{
-    /*      shape  px      colour*/
-    border: solid 3px rebeccapurple;
-    border-radius: 28px;
+video{
+    border: solid 4px brown;
+    border-radius: 22px;
 }
 #selected{color: purple;}
+/* Intro */
+#intro{
+    background-color: darkgray;
+    color: #f7f7f8;
+}
+/* Product */
+.product-card{
+    /*      shape  px      colour*/
+    background-color: #E9E6F0;
+    border-radius: 25px;
+    width: 250px;
+    margin: 5px;
+}
+.image{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    /* OR border-raidus: 20px 20px 0 0 */
+}
+footer{
+    background-color: #2B2343;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+#term{
+    color: blue;
+}
+
