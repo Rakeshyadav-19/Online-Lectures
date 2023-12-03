@@ -1,0 +1,60 @@
+body{
+    font-family: sans-serif;
+    margin: 0px;
+   }
+.main-nav{
+    background-color: #f7f7f8;
+    padding: 10px;
+}
+/* targets a tag of only main-nav class */
+.main-nav a{
+    font-size: 20px;
+    color: #3c404a;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+.main-nav a:hover{
+    color: #fb6376;
+
+}
+#selected{color: purple;}
+/* Form styling */
+form{
+    width: 350px; 
+    background-color: #eeeff1;
+    border: solid 1px #3c404a2f;
+    border-radius: 10px;
+    color: #3d414a;
+    padding: 25px 25px 2px 25px;
+    margin: 50px auto;
+}
+.field{
+    width: 94%;
+    font-size: 18px;
+    margin: 0px 0px 15px 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+}
+.field:focus{
+    outline: solid 2px #6f78e0;
+}
+form a{
+    color: purple;
+    text-decoration: none;
+}
+button{
+    width:100%;
+    background-color: #6f78e0;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+button:hover{
+    background-color: #3343ec;
+    cursor: pointer;
+    
+}

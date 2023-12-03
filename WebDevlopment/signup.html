@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/signup.css">
     <title>Signup</title>
 </head>
 <body>
@@ -18,17 +18,15 @@
     <hr>
     <form>
         <label for="name">Full Name:</label><br>
-        <input type="text" id="name" placeholder="Name"><br>
+        <input class="field" type="text" id="name" placeholder="Name"><br>
 
         <label for="email">Email:</label><br>
-        <input required type="email" id="email" placeholder="example@gmail.com"><br>
+        <input class="field" required type="email" id="email" placeholder="example@gmail.com"><br>
 
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" placeholder="1234567890"><br>
 
-        <label>Gender: </label><br>
+        <!-- <label>Gender: </label><br>
         <input type="radio" id="Male" name="gender"><label for="Male">Male</label>
-        <input type="radio" id="Female" name="gender"><label for="female">Female</label><br>
+        <input type="radio" id="Female" name="gender"><label for="female">Female</label><br> -->
         <!-- OR
             <label for="gender">Gender:</lable>
                 <select id="gender1">
@@ -37,20 +35,15 @@
                 </select>
         -->
 
-        <label for="birthdate">Date of Birth:</label>
-        <input type="date" id="birthdate"><br>
 
         <label for="pass">Password:</label><br>
-        <input required type="password" id="pass" placeholder="*********"><br>
+        <input class="field" required type="password" id="pass" placeholder="*********"><br>
 
-        <lable for="image" >Upload image:</lable><br>
-        <input type="file" value="Upload image" id="image"><br><br>
-
-        <input type="checkbox" for="term" required> <lable id="term"><a href="" style="color: blue;">Terms and conditions</a></lable></input>
+        <input type="checkbox" for="term" required> 
+        <lable id="term">I agree to <a href="">Terms and conditions</a></lable>
 
         <br><br>
-        
-        <button type="submit">Signup</button>
+        <button class="field" type="submit">Signup</button>
     </form>
 </body>
 </html>
