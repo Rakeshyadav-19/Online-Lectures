@@ -1,9 +1,16 @@
 body{
     font-family: sans-serif;
     margin: 0px;
-   }
+}
+header{
+    display: flex;
+    background-color: #b4b4b8;
+    padding: 0 5%;
+    justify-content: space-between;
+}
 .main-nav{
-    background-color: #f7f7f8;
+    display: flex;
+    column-gap: 40px;
     padding: 10px;
 }
 /* targets a tag of only main-nav class */
