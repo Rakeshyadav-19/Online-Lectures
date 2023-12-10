@@ -1,6 +1,6 @@
 
 body{
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     margin: 0px;
    }
 /*Navigation main*/
@@ -18,7 +18,9 @@ header{
 .main-nav a{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #3c404a;
+    /* color: #3c404a; */
+    text-decoration: none;
+    color:  black;
     text-decoration: none;
     transition-duration: 0.3s;
 }
@@ -26,42 +28,92 @@ header{
     color: #fb6376;
 }
 
-video{
-    border: solid 4px brown;
-    border-radius: 22px;
-    border-width: 5px;
-}
+
 #selected{color: purple;
 width: auto;}
 /* Intro */
 
 #intro{
-    background-color: darkgray;
-    color: #f7f7f8;
-    width: 100%;
+    display: flex;
+    width: 1100px;
+    margin: 100px auto;
+}
+#intro h1{
+    font-size: 30px;
+}
+#intro p{
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #3c404a;
+}
+#intro a{
+    background-color: rgb(88, 88, 196);
+    color: white;
+    border-radius: 15px;
+    padding: 10px 25px;
+    font-size: 22px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}#intro a:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+video{
+    width: 40%;
+    border-radius: 20px;
 }
 /* Main content */
+.product-nav{
+ display: flex; 
+ justify-content: space-between;
+ width: 1100px;
+ margin: 15px auto ;
+}
+.product-nav h3{
+    margin: 0px;
+}
+
+/* How to change diff tag of diff sections */
+.product-nav a,main a{
+    color: #5762d5;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+.product-nav a:hover,main a:hover{
+    cursor: pointer;
+    color: #fb6376;
+}
 main{
     display: flex;
     /* By default it is pn row */
-    flex-direction: row;
+    /* flex-direction: row; */
     /* WHen their is more content it goes down and gets responsive */
     flex-wrap: wrap;
     /* How contenct item  should  be*/
-    justify-content: space-evenly;
+    justify-content: center;
     /* Alignement of container in a div or page */
-    align-items: center;
+    /* align-items: center; */
     /* Gap between item  row  column */
-                    gap: 20px 10px;
+                    gap: 30px 30px;
+    width: 1100px;
+    margin: auto;
 }   
-#nav-cat{
-background-color: crimson;
+/* #nav-cat{
+    display: flex;
+    justify-content: center;
+color: #2B2343;
 width: 100%;
 margin-bottom: 1rem;
+margin-left: 20px;
+font-weight: bolder;
+font-size: 30px;
 }
 #nav-cat a{
-    color: white;
-}
+    font-size: medium;
+    color: violet;
+    cursor: pointer;
+} */
+
 /* Product */
 .product-card{
     /*      shape  px      colour*/
