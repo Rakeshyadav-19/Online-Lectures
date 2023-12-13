@@ -82,7 +82,7 @@ video{
     cursor: pointer;
     color: #fb6376;
 }
-main{
+#product-intro{
     display: flex;
     /* By default it is pn row */
     /* flex-direction: row; */
