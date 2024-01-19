@@ -1,4 +1,3 @@
-var price = 10;
-
-// To print it in console
-console.log("Hello")
+function becomeMember(){
+    console.log("Welcome, You are a member now")
+}
