@@ -1,48 +1,55 @@
 <html>
   <head>
-    <title>
-      
-    </title>
+      <title>
+          product page
+      </title>
   </head>
-  
-  <body>
-    <!-- Step 1 -->
-  <h1>Welcome to store</h1>
-  <img src = "https://blob.sololearn.com/courses/np.png">
-  
-   <!-- Step 2 -->
-   <!-- Added product description -->
-   <p> This is our <b>new product</b> <i>welcome</i> every one,Hope you<u>enjoy</u></p>
-   <!-- step 3 -->
-   <!-- added bold,italic, underlined formating-->
-   
-   <!-- Step 4 -->
-   <!-- added features List -->
-    <ul>
-        <li>Feat 1</li>
-        <li>Feat 2</li>
-        <li>Fear 3</li>
-    </ul>
+    <body>
+        <header style="text-align:center; background-color:#ffca3a">
+            <h1>Welcome to store</h1>
+        </header>
 
-    <h2>Order Now!</h2>
-    <form>
-        <label for = "size">Size:</label>
-        <select id = "size">
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
-        </select>
-        <label for = "color">Color:</label>
-        <select id = "color">
-            <option>Red</option>
-            <option>Black</option>
-            <option>White</option>
-        </select><br>
-        <label for = "name">Name:</label>
-        <input type = "text" value = "Name" id ="name"><br>
-        <lable for = "email">Email:</Label>
-        <input type="email" value = "E-mail" id = "email"><br>
-        <input type="submit">
+        <main style="text-align : center">
+            <img src = "https://blob.sololearn.com/courses/np.png">
 
-  </body>
+            <!-- Added product description -->
+            <p> This is our <b>new product</b> <i>welcome</i> every one, Hope you <u>enjoy</u></p>
+
+            <ol>
+                <li>Feat 1</li>
+                <li>Feat 2</li>
+                <li>Fear 3</li>
+            </ol>
+    
+            <h2>Order Now!</h2>
+            
+            <form>
+                <label for = "size">Size:</label>
+                <select id = "size">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+                
+                <label for = "color">Color:</label>
+                <select id = "color">
+                    <option>Red</option>
+                    <option>Black</option>
+                    <option>White</option>
+                </select><br>
+        
+                <label for = "name">Name:</label>
+                <input type = "text" value = "Name" id ="name"><br>
+        
+                <lable for = "email">Email:</Label>
+                <input type="email" value = "E-mail" id = "email"><br>
+        
+                <input type="submit" style="border:none;border-radius:5px;background-color:grey;color:white">
+            </form>
+        </main>
+
+        <footer style="text-align:center; background-color:#ffca3a"onclick="alert('Order Confirmed')">
+            <p>Thanks for Visiting</p>
+        </footer>
+    </body>
 </html>
