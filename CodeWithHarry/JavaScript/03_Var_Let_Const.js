@@ -22,7 +22,7 @@ b = 9;
 console.log(b);
 
 //Value of const cannot be changed nor it can be re-declared
-const auth = rax;
+const auth = "rax";
 console.log(auth)
 
 //Value of const neeb to be defined when it is declared,but value of let and var be defined later. 
