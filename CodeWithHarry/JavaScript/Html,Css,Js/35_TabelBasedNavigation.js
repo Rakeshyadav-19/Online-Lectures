@@ -11,11 +11,16 @@ console.log(t.tFoot);
 //reference to tbody
 console.log(t.tBodies);
 //collection of tr inside element
+console.log(t.rows[0].tbody)
+//Row number starting from 0
 console.log(t.rows[0].rowIndex);
 //collection of td and th
 console.log(t.rows[0].cells);
-//collection of td and th
+//Index of tr inside enclosing element
 console.log(t.rows[0].sectionRowIndex);
-//collection of tr inside element
-console.log(t.rows[0].rowIndex);
-// typeof document and typeof window is object
+
+//No. of cells inside enclosing tag <tr>
+//console.log(t.rows[0].cellIndex);
+
+console.lof(typeof document)
+console.lof(typeof window)
