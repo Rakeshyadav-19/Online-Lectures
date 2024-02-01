@@ -10,9 +10,9 @@ if (age >= 18) {
 //Q.2 In Q.1 use confirm to ask the user if he wants to see prompt again.
 let con = true;
 while (con == true) {
-  let age = prompt("Enter your age");
-  age = Number.parseInt(age);
-  if (age >= 18) {
+  let age2 = prompt("Enter your age");
+  age2 = Number.parseInt(age2);
+  if (age2 >= 18) {
     alert("You can drive");
   } else {
     alert("You cannit drive");
@@ -25,7 +25,7 @@ let age1 = prompt("Enter your age");
 age1 = Number.parseInt(age1);
 if (age1 >= 18) {
   alert("You can drive");
-} else if (age <= 0) {
+} else if (age1 <= 0) {
   console.error("You entered a negative age");
 } else {
   alert("You can't drive");
