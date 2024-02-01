@@ -23,7 +23,7 @@ else{
 
 //Q.2 In Q.1 use confirm to ask the user if he wants to see prompt again.
 let con = true;
-while (con == true) {
+do{
   let age2 = prompt("Enter your age");
   age2 = Number.parseInt(age2);
   if (age2 >= 18) {
@@ -32,7 +32,7 @@ while (con == true) {
     alert("You cannit drive");
   }
   con = confirm("Would you  like to see the prompt again");
-}
+}while (con == true) 
 
 //Q.3 In the previous question, use console.error to log the error if the age entered is negative.
 let age1 = prompt("Enter your age");
@@ -46,24 +46,14 @@ if (age1 >= 18) {
 }
 
 //Q.4 Write a program to change the url to google.com (Redirection) if user enters a number greater
-let num = prompt("Enter your age");
-num = Number.parseInt(num);
-if (num >= 0) {
-  aconsole.href = "https://google.com";
-} else if (num <= 0) {
-  console.error("You entered a negative age");
-} else {
-  alert("You can't drive");
+let num1 = prompt("Enter a number");
+num1 = Number.parseInt(num1);
+if (num1 >= 1) {
+  console.href = "https://google.com";
+} else{
+  alert("You enterd small number");
 }
 
 //Q.5 Change the background of the page to yellow, red or any other color based on user input through prompt.
 let color = prompt("Enter a color");
 document.body.style.background = color;
-
-if (color == "red") {
-  document.body.style.backgroundColor = "red";
-} else if (color == "yelow") {
-  document.body.style.backgroundColor = "yellow";
-} else {
-  document.body.style.backgroundColor = "green";
-}
