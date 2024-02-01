@@ -6,6 +6,20 @@ if (age >= 18) {
 } else {
   alert("You cannit drive");
 }
+//OR
+/*
+let age = prompt("Enter your age");
+age = Number.parseInt(age);
+const canDrive = (age) =>{
+  return age >= 18 ? true : false
+}
+if (canDrive(age)){
+  alert("You can drive");
+}
+else{
+  alert("You cannit drive");
+}
+*/
 
 //Q.2 In Q.1 use confirm to ask the user if he wants to see prompt again.
 let con = true;
