@@ -1,8 +1,8 @@
 //Q use javascript to create a game of snake, water and gun. The game should ask you to enter S, W or G. The computer should be able to randomly generate S, W or G and declare win or loss using alert. Use confirm and prompt where ever required.
 
 let user = prompt("Enter S, W or G");
-let cpu = ["S", "W", "G"];
-let cpuI = cpu[Math.floor(Math.random() * cpu.length)];
+let cpuI = ["S", "W", "G"];
+let cpu = cpuI[Math.floor(Math.random() * cpuI.length)];
 
 const match = (cpu, user) => {
   if (cpu === user) {
@@ -21,7 +21,5 @@ const match = (cpu, user) => {
     return "cpu";
   }
 };
-let result = alert("The winner is " + match(cpu, user));
-document.write(
-  `CPU:${cpu} <br> User:${user} <br>The winner is: ${result.toUpperCase()}`,
-);
+let result = match(cpu, user)
+document.write(`CPU:${cpu} <br> User:${user} <br>The winner is: ${result}`);
