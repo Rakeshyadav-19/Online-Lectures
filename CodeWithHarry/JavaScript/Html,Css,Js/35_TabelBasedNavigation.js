@@ -22,5 +22,5 @@ console.log(t.rows[0].sectionRowIndex);
 //No. of cells inside enclosing tag <tr>
 //console.log(t.rows[0].cellIndex);
 
-console.lof(typeof document)
-console.lof(typeof window)
+console.log(typeof document)
+console.log(typeof window)
