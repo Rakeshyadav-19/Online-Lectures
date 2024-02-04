@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <!-- 
+        $ Mouse Events: click, contextmenue(right click), mouseover/mouseout, mousedown/mouseup, mousemove
+
+        $ Keyboard Events: keydown(key pressed) and keyup(key released)
+
+        $ form element Events: submit, focus, etc
+
+        $ Document Events: DOMContextLoaded
+    -->
+  <div class="container" onmouseenter="console.log('container ke andar mouse gaya')"onclick="console.log('container me click hua')">
+        <button onclick="alert('hello'); let a = 6; console.log(a)">Click me</button>
+  </div>
+
+  <script src="47_BrowserEvents.js"></script>
+</body>
+</html>
