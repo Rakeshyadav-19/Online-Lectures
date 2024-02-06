@@ -4,15 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport">
     <title>Clock</title>
+    <style>
+        #clock{
+            justify-content: center;
+            margin: 20px 750px;
+            padding: 5px 0px;
+            background-color: #d4f1c7;
+            border-radius: 25px;
+        }
+        #Time{
+            display: flex;
+            margin: 0px 50px;
+            justify-content: center;
+            border: solid 5px #99BC85;
+            border-radius: 23px;
+            font-size: large;
+            padding: 14px;
+        }
+        #Date{
+            display: flex;
+            margin: 0px 50px 30px;
+            /* padding: px 50px; */
+            justify-content: center;
+            border: solid 5px #99BC85;
+            border-radius: 23px;
+            font-size: large;
+            padding: 2px;
+        }
+        .text{
+            display: flex;
+            color: #7bbd51;
+            justify-content: center;
+            margin-bottom: 2px;
+        }
+    </style>
 </head>
 <body>
-
-    <div id="clock">
-        <div id="Hr"></div>
-        <div id="Min"></div>
-        <div id="Sec"></div>
+    <div id = "clock">
+        <h2 class = "text"> Time </h2>
+        <div id="Time">
+            <div id="Hr"></div>
+            <div id="Min"></div>
+            <div id="Sec"></div>
+        </div>
+        <h2 class="text">Date</h2>
+        <div id="Date">
+            <div id="week"></div>
+            <div id="month"></div>
+            <div id="day"></div>
+        </div>
     </div>
-
     <script src="51_Exercise4.js"></script>
 </body>
 </html>
