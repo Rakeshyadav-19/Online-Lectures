@@ -8,6 +8,12 @@ print(nm.upper())
 print(nm.lower())
 print("\n")
 
+#To remove spaces before and after stirng
+sttt = " This has Spaces  "
+print(sttt)
+print(sttt.strip())
+print("\n")
+
 #To remove traling(at last) character from string
 nnm = "Raajjk!!!!!!!"
 print(nnm)
