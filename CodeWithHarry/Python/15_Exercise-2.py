@@ -13,7 +13,9 @@ if((greet > 0) and (greet < 7)):
     print("Good early morning",name)
 elif((greet > 7) and (greet < 12)):
     print("Good Moring",name)
-elif((greet > 12)  and (greet < 19)):
+elif((greet > 12)  and (greet < 16)):
+    print("Good Afternoon",name)
+elif((greet > 16)  and (greet < 19)):
     print("Good Evening",name)
 elif((greet > 19)  and (greet < 24)):
     print("Good Night",name)
