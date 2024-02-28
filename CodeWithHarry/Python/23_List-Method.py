@@ -71,6 +71,7 @@ print("\n")
 
 
 # method inserts an item at the given index
+print("\n\n")
 colors = ["voilet", "indigo", "blue", "green", "pink"]
 #           [0]        [1]      [2]     [3]      [4]
 colors.insert(5, "black")   #inserts item at index 1
