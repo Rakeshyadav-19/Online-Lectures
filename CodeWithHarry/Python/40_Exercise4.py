@@ -82,8 +82,9 @@ def decoding(decode):
                 key.pop(-1)
 
             # insert and delete the final letter
-            key.insert(0, key[2])
-            key.pop(3)
+            z = len(key)
+            key.insert(0, key[z-1])
+            key.pop(z)
 
             # Join the word with 3 letters
             final.insert(i, " ".join(key).replace(" ",""))
