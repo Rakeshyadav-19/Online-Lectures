@@ -35,7 +35,9 @@ while True:
 def coding(code):
     final = []
     i = 0
+    # print the list
     print(code)
+    
     for word in code:
         if len(word) < 3:
             # Simply revrse the string
@@ -66,6 +68,7 @@ def coding(code):
 def decoding(decode):
     final = []
     i = 0
+    # Print the list
     print(decode)
 
     for word in decode:
