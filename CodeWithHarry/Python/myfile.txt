@@ -1,0 +1,2 @@
+Hello, world!o a file
+welcome to read file
