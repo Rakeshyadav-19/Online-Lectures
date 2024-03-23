@@ -4,7 +4,7 @@ class MyClass1:
         self._value = value
 
     @property #Getter
-    def val(self):
+    def val(self): #Function in class is called mathod
         return self._value
 # To use the getter, we can create an instance of the MyClass class, and then access the value property as if it were an attribute
 obj = MyClass1(10)
