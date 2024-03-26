@@ -21,8 +21,8 @@ class Math:
   def add(a, b):
       return a + b
 
-# result = Math.add(1, 2)
-# print(result) # Output: 3
+result = Math.add(1, 2)
+print(result) # Output: 3
 a = Math(5)
 print(a.num)
 a.addtonum(6)

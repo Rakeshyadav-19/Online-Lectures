@@ -11,4 +11,4 @@
 import glob
 
 # All files and directories ending with .txt and that don't begin with a dot:
-print(glob.glob("/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/*.py")) 
+print(glob.glob("/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/*.txt")) 
