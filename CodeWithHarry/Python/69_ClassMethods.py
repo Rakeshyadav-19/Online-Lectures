@@ -9,6 +9,7 @@ class ExampleClass:
 #E.G -
 class Employee:
   company = "Apple"
+  name = "name"
   def show(self):
     print(f"The name is {self.name} and company is {self.company}")
 
