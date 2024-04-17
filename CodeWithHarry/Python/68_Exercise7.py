@@ -7,8 +7,24 @@
 # design.png --> 4.png
 # name.png --> 5.png
 
-# import os
+import os
 import glob
+import re
 
 # All files and directories ending with .txt and that don't begin with a dot:
-print(glob.glob("/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/Exercise7_68/*.txt")) 
+# print(glob.glob("/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/Exercise7_68/*.txt")) 
+
+print(os.getcwd())
+dest = input("Enter the file location:: ")
+ext = input("Enter the file extension:: ")
+files = glob.glob(f"{dest}/*.{ext}")
+# print("The files are:\n", files)
+
+i = 0
+for f in files:
+    print(f)
+    source = f
+    os.rename(source,f'{dest}/{i}.{ext}')
+    i = i + 1
+
+print("The renamed files are: ",files)
