@@ -9,22 +9,28 @@
 
 import os
 import glob
-import re
 
 # All files and directories ending with .txt and that don't begin with a dot:
 # print(glob.glob("/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/Exercise7_68/*.txt")) 
 
-print(os.getcwd())
-dest = input("Enter the file location:: ")
+print("Your current location:- ",os.getcwd())
+choice = input("Use cureent location or enter manual:: \nType:\n1 for current\n2 for manual\n")
+if(choice == 1):
+    dest = os.getcwd()
+else:
+    dest = input("Enter the file location:: ")
+
 ext = input("Enter the file extension:: ")
 files = glob.glob(f"{dest}/*.{ext}")
 # print("The files are:\n", files)
 
-i = 0
+i = 1
 for f in files:
     print(f)
     source = f
     os.rename(source,f'{dest}/{i}.{ext}')
     i = i + 1
 
-print("The renamed files are: ",files)
+print("The renamed files are: ")
+for ref in files:
+    print(ref)
