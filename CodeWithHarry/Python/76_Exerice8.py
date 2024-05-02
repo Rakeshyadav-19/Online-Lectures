@@ -2,14 +2,26 @@
 # pypdf is a free and open-source pure-python PDF library capable of splitting, merging, cropping, and transforming the pages of PDF files. It can also add custom data, viewing options, and passwords to PDF files. pypdf can retrieve text and metadata from PDFs as well.
 
 from PyPDF2 import PdfWriter
+import os
 
 merger = PdfWriter()
 
-for pdf in [ "/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/Exercise8_76/sample.pdf",
-             "/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/Exercise8_76/dummy.pdf", 
-             "/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/Exercise8_76/dictionary.pdf"
-            ]:
-    merger.append(pdf)
+Numpdf = int(input("Enter the number of PDF's:: "))
+i = 0
+pdf = []
+print("After evry file location input press ENTER")
+while(i != Numpdf):
+    loc = input(f"Enter File location for PDF No. {i+1}:: ")
+    merger.append(loc)
+    i = i+1
 
-merger.write("/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/Exercise8_76/merged-pdf.pdf")
+path = input("Enter location to save file:: ")
+name = input("Enter the name for merged pdf:: ")
+merger.write(f"{path}/{name}.pdf")
 merger.close()
+
+
+if os.path.isfile(os.path.join(path, name)):
+    print("PDF merged sucessfully")
+else:
+    print("File not found.")
