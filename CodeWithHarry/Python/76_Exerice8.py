@@ -5,8 +5,11 @@ from PyPDF2 import PdfWriter
 
 merger = PdfWriter()
 
-for pdf in ["/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/Exercise8_76/1.pdf", "/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/Exercise8_76/2.pdf", "/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/Exercise8_76/3.pdf"]:
+for pdf in [ "/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/Exercise8_76/sample.pdf",
+             "/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/Exercise8_76/dummy.pdf", 
+             "/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/Exercise8_76/dictionary.pdf"
+            ]:
     merger.append(pdf)
 
-merger.write("merged-pdf.pdf")
+merger.write("/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/Exercise8_76/merged-pdf.pdf")
 merger.close()
