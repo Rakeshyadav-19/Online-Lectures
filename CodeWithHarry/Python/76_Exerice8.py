@@ -25,3 +25,18 @@ if os.path.isfile(os.path.join(path, name)):
     print("PDF merged sucessfully")
 else:
     print("File not found.")
+
+# Harrry-
+'''
+from PyPDF2 import PdfWriter
+import os
+
+merger = PdfWriter()
+files = [file for file in os.listdir() if file.endswith(".pdf")]
+
+for pdf in files:
+    merger.append(pdf)
+
+merger.write("merged-pdf.pdf")
+merger.close()
+'''
