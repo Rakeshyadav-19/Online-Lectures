@@ -2,10 +2,15 @@
 # l = ["Rahul", "Nishant", "Harry"]
 
 '''I am using Linux'''
+from playsound import playsound
+from gtts import gTTS
 
-import pyttsx3
-engine = pyttsx3.init()
 names = ["rax","ram","raj"]
+
+def Talk(name):
+    tts = gTTS(text=f"shoutout to {name}", lang='en', slow=False)
+    tts.save("/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/83_Shoutout.mp3")
+    playsound('/home/rax/Documents/GIT/Online-Lectures/CodeWithHarry/Python/83_Shoutout.mp3')
+
 for name in names:
-    engine.say(f"Shoutout to {name}")
-engine.runAndWait()
+    Talk(f"{name}")
