@@ -6,9 +6,16 @@
 import requests
 import json 
 
-url = ('https://newsapi.org/v2/everything?'
-       'country=IN&'
-       'sources=bbc-news&'
+date = '2024-05-07'
+sorting = 'popularity'
+source = 'bbc-news'
+fetch = 'everything'
+
+url = (f'https://newsapi.org/v2/{fetch}?'
+       f'from=&{date}'
+       f'sortBy={sorting}&'
+       # 'country=In&'
+       f'sources={source}&'
        'apiKey=8bbbd9d569b5486a809ddf3598d97b9a')
 
 # url = ('https://newsapi.org/v2/everything?'
