@@ -1,0 +1,13 @@
+{
+  "name": "online-lectures",
+  "version": "1.0.0",
+  "description": "journey of NodeJS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rax",
+  "license": "ISC"
+}
