@@ -16,3 +16,7 @@ Machine Learning - I loved this playlist from Google Developers : https://www.yo
 
 Django - For Django, try the tutorial from the official documentation. Trust me its really good : https://docs.djangoproject.com/en/4.1/intro/tutorial01/
 '''
+
+# Numpy,Pandas, scikitlearn, tenserflow.....flask, 
+# Tenserflow hub - Use Trained model
+# Pytorch - ML
