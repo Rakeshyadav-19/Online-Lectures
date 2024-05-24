@@ -19,4 +19,4 @@ Django - For Django, try the tutorial from the official documentation. Trust me 
 
 # Numpy,Pandas, scikitlearn, tenserflow.....flask, 
 # Tenserflow hub - Use Trained model
-# Pytorch - ML
+# Pytorch - ML 
