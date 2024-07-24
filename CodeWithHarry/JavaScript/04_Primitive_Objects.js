@@ -8,7 +8,7 @@ let f = Symbol("I am a nice symbol");
 let g = undefined; //By default a datatype is udefined
 
 console.log(a,b,c,d,e,f,g);
-console.log(typeof d);
+console.log(typeof f);
 
 //Object
 const item = {
