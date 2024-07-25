@@ -1,4 +1,5 @@
 // Callbacks
+// helps pass function as a argument.
 function loadScript(src, callback) {
     var script = document.createElement("script");
     script.src = src;
@@ -25,7 +26,6 @@ function hello(error, src) {
 function goodmorning(error, src) {
     if (error) {
       console.log(error)
-      sendEmergencyMessageToCeo();
       return
     }
     alert('Good morning' + src);
