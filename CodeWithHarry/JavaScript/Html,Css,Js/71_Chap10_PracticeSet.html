@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>71_Chap10_PracticeSet</title>
+    <style>
+        .card {
+            height: max-content;
+            width: 300px;
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 12px auto;
+        }
+        .notes {
+            height: max-content;
+            width: 600px;
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 12px auto;
+            
+        }
+        input{
+            margin: 9px 0px;
+        }
+        button{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body style="background-color: black; color: white;">
+
+    <div class="card">
+        <p>
+        <h1>ITEM</h1>
+        </p>
+        <p>ID: <span class="ID"></span></p>
+        <p>NAME: <span class="NAME"></span></p>
+        <p>COLOR: <span class="COLOR"></span></p>
+        <p>PRICE: <span class="PRICE"></span></p>
+
+        <input type="text" id="val">
+        <button onclick="give()">Find</button>
+    </div>
+
+
+    <div class="notes">
+        <p><h1>NOTE STORING APP(local storage)</h1></p>
+        <div>
+            <input type="text" id="key">
+        </div>
+        <div>
+            <input type="text" id="value">
+        </div>
+        <button onclick="save()">SAVE</button>
+    </div>
+
+
+    <div class="notes">
+        <p><h1>SAVED NOTES</h1></p>
+        <div id="show"></div>
+        <input id="get-key"></input>
+        <button onclick="show()">SHOW</button>
+    </div>
+
+    <div class="notes">
+        <p><h1>DELETE NOTE</h1></p>
+        <div id="deleted"></div>
+        <input id="delete"></input>
+        <button onclick="del()">DELETE</button>
+    </div>
+
+    <script src="71_Chap10_PracticeSet.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>65_Exercise5</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: green;
+        }
+
+        #text {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+
+        #second:before {
+            content: "";
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            animation: textFade2 5s ease;
+            height: 100%;
+            box-shadow: 25px 0px 30px 10px #000000;
+        }
+
+        @keyframes textFade2 {
+            from {
+                transform: translateX(-110%);
+            }
+
+            to {
+                transform: translateX(0%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="finish">
+        <div id="text">Terminal</div>
+        <div id="terminal">START</div>
+        <br><br>
+        <div id="apps"></div>
+        <br><br>
+        <div id="hack"></div>
+    </div>
+    <script src="65_Exercise5.js"></script>
+</body>
+
+</html>
