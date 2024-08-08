@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TODO</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+    <link rel="stylesheet" href="73_Exercise6.css">
+</head>
+
+<body>
+    <div id="nav-bar">
+        <input id="nav-toggle" type="checkbox" />
+        <div id="nav-header"><a id="nav-title">TODO</a>
+            <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+            <hr />
+        </div>
+        <div id="nav-content">
+            <div class="nav-button" data-target="create"><i class="fas fa-solid fa-plus"></i><span>CREATE</span></div>
+            <div class="nav-button" data-target="show"><i class="fas fa-database"></i><span>SHOW</span></div>
+            <div class="nav-button" data-target="delete"><i class="fas fa-trash"></i><span>DELETE</span></div>
+            <div id="nav-content-highlight"></div>
+        </div>
+        <input id="nav-footer-toggle" type="checkbox" />
+        <div id="nav-footer">
+            <div id="nav-footer-heading">
+                <div id="nav-footer-avatar"><img
+                        src="https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg" /></div>
+                <div id="nav-footer-titlebox"><a id="nav-footer-title" href="https://codepen.io/uahnbu/pens/public"
+                        target="_blank">Rax</a><span id="nav-footer-subtitle">Creator</span></div>
+                <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+            </div>
+            <div id="nav-footer-content">
+                <Lorem>Created a TODO list app capable of storing your Todos in localStorage, and added options to
+                    create, delete and access all the Todos.</Lorem>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="note-taking" class="section">
+        <div id="note-taking-section" style="text-align: center; margin: auto;">NOTE TAKING</div>
+    </div>
+    <div id="create" class="section">Create Section</div>
+    <div id="show" class="section">Show Section</div>
+    <div id="delete" class="section">Delete Section</div>
+
+    <script src="73_Exercise6.js"></script>
+</body>
+
+</html>

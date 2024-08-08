@@ -2,12 +2,20 @@
 async function give() {
     let id = document.getElementById('val').value;
     let url = `https://api.restful-api.dev/objects/${id}`;
+    // let url = "https://api.restful-api.dev/objects/4";
 
     try {
-        let res = await fetch(url);
+        let res = await fetch(url, {
+            method: 'GET', // Specify the HTTP method
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
         if (!res.ok) {
             throw new Error('Network response was not ok ' + res.statusText);
         }
+        
         let data = await res.json();
 
         // Check if data structure is as expected
@@ -29,6 +37,7 @@ async function give() {
         document.querySelector('.PRICE').textContent = 'Error';
     }
 }
+
 
 // let url = "https://kontests.net/api/v1/all"
 // let response = fetch(url)
