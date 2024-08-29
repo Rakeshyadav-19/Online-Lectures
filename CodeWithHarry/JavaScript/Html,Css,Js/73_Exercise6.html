@@ -39,11 +39,23 @@
 
 
     <div id="note-taking" class="section">
-        <div id="note-taking-section" style="text-align: center; margin: auto;">NOTE TAKING</div>
+        <div id="note-taking-section">TODO LIST</div>
     </div>
-    <div id="create" class="section">Create Section</div>
-    <div id="show" class="section">Show Section</div>
-    <div id="delete" class="section">Delete Section</div>
+    <div id="create" class="section">
+        <input type="text" placeholder="Enter the Heading" id="todo-head">
+        <input type="text" placeholder="Enter the TODO" id="todo-value">
+        <button onclick="add()">ADD</button>
+    </div>
+
+    <div id="show" class="section">
+        <button onclick="show()">Show</button>
+        <p id="show-text"></p>
+    </div>
+    
+    <div id="delete" class="section">
+        <input type="text" placeholder="Enter the Heading to delete" id="todo-head">
+        <button onclick="del()">DELETE</button>
+    </div>
 
     <script src="73_Exercise6.js"></script>
 </body>

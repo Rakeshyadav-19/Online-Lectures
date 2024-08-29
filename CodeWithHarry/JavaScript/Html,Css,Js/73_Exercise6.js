@@ -34,3 +34,23 @@ document.getElementById('nav-title').addEventListener('click', () => {
     // Highlight the NOTE TAKING section
     noteTakingSection.classList.add('highlight');
 });
+
+
+function add() {
+    let head = document.getElementById("todo-head").value
+    let todo = document.getElementById("todo-value").value
+    localStorage.setItem(head, todo)
+}
+function del() {
+    let head = document.getElementById("todo-head").value
+    localStorage.removeItem(head)
+}
+
+
+function show() {
+    // const keys = Object.keys(localStorage);
+    let wrt = document.getElementById("show-text");
+    for (let i = 0; i < localStorage.length; i++) {
+        wrt.innerHTML += i + "."+localStorage.key(i) + "<br>";
+    }
+}

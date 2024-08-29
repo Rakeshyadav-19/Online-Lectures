@@ -367,3 +367,51 @@ label[for=nav-footer-toggle] {
 .section.highlight {
     background-color: var(--background);
 }
+
+#note-taking-section {
+    align-items: center;
+    text-align: center;
+    font-size: 83px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#create {
+    font-size: 99px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#delete {
+    font-size: 99px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 400px;
+    height: 70px;
+    font-size: 50px;
+    border-radius: 12px;
+    border-width: 8px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    margin-top: 100px;
+    height: 70px;
+    border-radius: 12px;
+    font-size: 30px;
+    border-width: 8px;
+}
+
+#show{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
