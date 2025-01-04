@@ -1,0 +1,7 @@
+To design the website according to the layout.
+
+-- Top - sticky nav
+-- box with two box sections side by side.
+-- round text container
+-- footer
+-- a logo in bottom right corner

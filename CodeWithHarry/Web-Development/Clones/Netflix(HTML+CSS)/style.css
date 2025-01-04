@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu",
+    "sans-serif";
+}
+.main {
+  background-image: url("assets/bg.jpg");
+  height: 90vh;
+  position: relative;
+  /* background-size: max(1200px, 100vw); */
+  background-position: center center;
+}
+.blackbox {
+  opacity: 0.7;
+  background-color: black;
+  height: 90vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+nav {
+  display: flex;
+  margin: 0vh 8vw;
+  padding-top: 18px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+.logo img {
+  /* height: 54px; */
+  width: 130px;
+  /* height: 2.5rem; */
+}
+
+.side {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.side button {
+  padding: 8px 16px;
+  border-radius: 0.25rem;
+  color: white;
+}
+
+.signin button {
+  background-color: rgb(229, 9, 20);
+  border: none;
+}
+
+.lang button {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(178, 160, 160, 0.52);
+  background-color: rgba(0, 0, 0, 0.455);
+}
+.lang button span {
+  padding: 0px 12px;
+}
+
+.lang button img {
+  height: 15px;
+  filter: invert(100);
+}
+
+.hero {
+  position: relative;
+  z-index: 9;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+  height: calc(100% - 100px);
+  text-align: center;
+  padding: 40px;
+  padding-bottom: calc(40px - 38px);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero p:nth-child(1) {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+.hero p:nth-child(2) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+.hero p:nth-child(3) {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+.hero-buttons input {
+  padding: 2px 7px;
+  width: 370px;
+  /* width: 40vw; */
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.305);
+  color: white;
+  border: 1px solid rgb(133, 120, 120);
+  border-radius: 5px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 23px;
+}
+.hero-buttons button {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  width: 200px;
+  height: 55px;
+  border-radius: 7px;
+  margin-left: 5px;
+  border: none;
+  gap: 23px;
+  font-size: 23px;
+}
+
+.seperation {
+  height: 3px;
+  width: 100%;
+  background-color: rgba(229, 9, 20, 0.644);
+}
+
+.watch-section {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 4px solid white; */
+  padding: 30px;
+  max-width: 53vw;
+  margin: 40px auto;
+}
+
+@media only screen and (max-width: 1318px) {
+  .watch-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .left-side {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.info h1 {
+  font-size: 34px;
+  line-height: 52px;
+}
+.image {
+  position: relative;
+}
+.image img {
+  position: relative;
+  z-index: 10;
+  width: 555px;
+}
+.image video {
+  position: absolute;
+  right: 68px;
+  top: 86px;
+  width: 410px;
+}
+
+@media only screen and (max-width: 900px) {
+  .image img {
+    width: 400px;
+  }
+  .image video {
+    width: 290px;
+    right: 54px;
+    top: 62px;
+  }
+  .info h1 {
+    font-size: 23px;
+    line-height: normal;
+  }
+
+  .hero p:nth-child(1) {
+    font-size: 38px;
+  }
+  .hero p:nth-child(2) {
+    font-size: 17px;
+  }
+  .hero p:nth-child(3) {
+    font-size: 14px;
+  }
+}
+
+.faq {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 24px;
+  padding: 34px;
+}
+
+.que {
+  transition: all 1s ease-out;
+  background-color: #2d2d2d;
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: 11px auto;
+  cursor: pointer;
+  padding: 24px;
+}
+
+.que:hover {
+  background-color: #414141;
+}
+
+.que svg {
+  filter: invert(1);
+}
+
+footer {
+  /* color: white; */
+  max-width: 80vw;
+  margin: auto;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 44px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration-color: rgba(255, 255, 255, 0.7);
+}
+
+.foot div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 6px 10px;
+}
+
+@media screen and (max-width: 680px) {
+  .foot div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .hero-buttons input {
+    width: 80%;
+  }
+
+  .faq {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 430px) {
+  nav {
+    flex-direction: column;
+  }
+}

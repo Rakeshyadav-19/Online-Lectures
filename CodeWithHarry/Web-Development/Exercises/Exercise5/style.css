@@ -1,0 +1,87 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  /* background-color: red;
+  display: inline;
+  padding: 4px;
+  border-radius: 100%;
+  position: sticky;
+  z-index: 10;
+  top: 96%;
+  left: 97%; */
+
+
+  /* Harry sir -  */
+  height: 32px;
+  width: 32px;
+  background: orange;
+  position: fixed;
+  bottom: 12px;
+  right: 23px;
+  border-radius: 60px;
+}
+ul li {
+  list-style: none;
+  display: flex;
+}
+
+nav ul {
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 15px;
+  justify-content: space-around;
+  margin: 0;
+}
+
+ul li:hover {
+  color: aquamarine;
+}
+
+main {
+  background-color: blanchedalmond;
+  height: 750px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 5px 10px;
+}
+
+.box {
+  display: flex;
+  height: 55vh;
+  width: 30vh;
+  border: 2px solid black;
+}
+
+.box1 {
+  background-color: pink;
+}
+.box2 {
+  background-color: gainsboro;
+}
+
+.header {
+  background-color: antiquewhite;
+  padding: 50px;
+  text-align: center;
+  border: 2px solid black;
+  margin: 50px 15px;
+  border-radius: 12px;
+}
+
+footer {
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 15px;
+  background-color: plum;
+  height: 200px;
+}

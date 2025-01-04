@@ -1,0 +1,54 @@
+.container {
+  width: 80vw;
+  height: 90vh;
+  background-color: black;
+  position: relative;
+}
+
+.ball {
+  background-color: pink;
+  height: 10vh;
+  width: 5vw;
+  border-radius: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  animation: animateX 5s linear infinite, animateY 1s ease-out infinite alternate;
+}
+
+/* @keyframes bounce {
+  0% {
+    transform: translateY(-400px);
+  }
+  20% {
+    transform: translateX(112px);
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-400px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-400px);
+  }
+} */
+
+@keyframes animateX {
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+    
+}@keyframes animateY {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 100%;
+    }
+    
+}
