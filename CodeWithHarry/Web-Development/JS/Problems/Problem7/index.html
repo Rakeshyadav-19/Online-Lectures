@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Storing</title>
+    <style>
+      .container {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin: auto;
+        background-color: lightgreen;
+        padding: 23px;
+        /* gap: 13px; */
+        border: 3px solid black;
+        border-radius: 33px;
+      }
+      input {
+        padding: 9px;
+        border: none;
+        margin-bottom: 22px;
+        border-radius: 12px;
+      }
+      #save {
+        width: 40%;
+        margin: auto;
+        border: none;
+        border-radius: 12px;
+        padding: 12px 15px;
+      }
+      .save:hover {
+        background-color: beige;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <label for="note-title">Note Title</label>
+      <input type="text" id="note-title" />
+      <label for="note-text">Note Text</label>
+      <input type="text" id="note-text" />
+      <button id="save">Save Note</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
