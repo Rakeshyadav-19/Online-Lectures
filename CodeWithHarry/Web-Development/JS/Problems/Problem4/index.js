@@ -1,6 +1,5 @@
 // The Password Validator: You are building a password validation feature. Create a function that checks if a given password meets the following criteria: at least 8 characters long, contains both uppercase and lowercase letters, and includes at least one digit.
 
-let pass = "rax@rameshoh123";
 function ascii(a) {
   return a.charCodeAt();
 }
@@ -35,7 +34,7 @@ console.log(Validator("Strongpassword123"));
 //
 //
 // OR
-function passvaildate(pass) {
+function passvaildate(password) {
   const isLongEnough = password.length >= 8;
   // Check if the password contains at least one uppercase letter
   const hasUppercase = /[A-Z]/.test(password);

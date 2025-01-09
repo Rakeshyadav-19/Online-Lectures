@@ -1,11 +1,8 @@
 // The Array Filterer: You are building a search feature for your e-commerce site. Write a function named filterProducts that takes an array of product objects and a filter criterion. The function should return a new array containing only the products that match the filter criterion.
 
-async function filterProducts(products, filter) {
-  new Promise((resolve, reject) => {
-    let list = products.filter((item) => {
-      return products["category"] == filter;
-    });
-    resolve(list);
+function filterProducts(products, filter) {
+  return products.filter((item) => {
+    return item["category"] == filter;
   });
 }
 let products = [
@@ -51,8 +48,5 @@ let products = [
   },
 ];
 
-async function main() {
-  console.log(filterProducts(products, "Electronics"));
-}
-
-main();
+let flist = filterProducts(products, "Electronics");
+console.log(flist);

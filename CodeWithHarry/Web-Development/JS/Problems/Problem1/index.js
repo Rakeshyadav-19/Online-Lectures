@@ -6,16 +6,16 @@ let housesarr = [];
 
 for (const name of names) {
   if (name.length < 6) {
-    housesarr.push(name + ":" + "Gryffindor");
+    housesarr.push(name + " " + "Gryffindor");
     housesobj[name] = "Gryffindor";
   } else if (name.length < 8) {
-    housesarr.push(name + ":" + "Hufflepuff");
+    housesarr.push(name + " " + "Hufflepuff");
     housesobj[name] = "Hufflepuff";
   } else if (name.length < 12) {
-    housesarr.push(name + ":" + "Ravenclaw");
+    housesarr.push(name + " " + "Ravenclaw");
     housesobj[name] = "Ravenclaw";
   } else if (name.length >= 12) {
-    housesarr.push(name + ":" + "Slytherin");
+    housesarr.push(name + " " + "Slytherin");
     housesobj[name] = "Slytherin";
   }
 }
@@ -23,8 +23,11 @@ for (const name of names) {
 console.log(housesobj);
 console.log(housesarr);
 
-for (const name of housesarr) {
-  if (name.endsWith("Gryffindor")) {
-    console.log(name);
+function getStudents(housesarr, house) {
+  for (const name of housesarr) {
+    if (name.endsWith(house)) {
+      console.log(name.slice(0, name.length - house.length));
+    }
   }
 }
+getStudents(housesarr, "Gryffindor");

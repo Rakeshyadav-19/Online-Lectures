@@ -10,7 +10,7 @@ async function placeOrder() {
 }
 
 async function main() {
-    console.log("Placing order...");
+  console.log("Placing order...");
   let order = await placeOrder();
 
   console.log(order);

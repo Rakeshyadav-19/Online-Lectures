@@ -5,7 +5,6 @@ let vowels = ["a", "e", "i", "o"];
 function vowelsCount(string) {
   let count = 0;
   for (const char of string.toLowerCase()) {
-    console.log(char);
     for (const vow of vowels) {
       if (char == vow) {
         count++;
@@ -14,9 +13,7 @@ function vowelsCount(string) {
   }
 
   //   for (const char of string.toLowerCase()) {
-  //     console.log(char)
   //     if (vowels.includes(char)) {
-  //   console.log(char);
   //       count++;
   //     }
   //   }
