@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <link rel="stylesheet" href="CSS/utility.css" />
+  </head>
+  <body>
+    <div class="sides flex">
+      <div class="left">
+        <div class="library re-img flex">
+          <div class="lib-name flex-full">
+            <img src="img/playlist.svg" alt="" />
+            Your Library
+          </div>
+          <div class="lib-add">
+            <img src="img/close.svg" id="closeimg" alt="" />
+          </div>
+        </div>
+        <div class="lib-boxes flex"></div>
+      </div>
+
+      <div class="right">
+        <nav class="nav-bar flex re-img">
+          <div class="search flex-full re-img">
+            <img src="img/browse.svg" class="se browse-img" alt="Browse" />
+          </div>
+          <div class="home flex-full">
+            <img src="img/home.svg" alt="Home" />
+          </div>
+          <div class="home flex-full">
+            <img src="img/search.svg" alt="Home" />
+          </div>
+
+          <!-- <div class="home flex-full">
+            <img src="img/home.svg" alt="Home" />
+          </div> -->
+        </nav>
+
+        <div class="playlists">
+          <h1>Recently Played</h1>
+          <div class="list"></div>
+
+          <h1>Songs</h1>
+          <div class="list local-albums playlists-last"></div>
+        </div>
+
+        <div class="playBar flex">
+          <div class="sng-info flex">
+            <!-- <img
+              class=""
+              src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88"
+            /> -->
+            <div class="sng-data">
+              <div class="sng-name">NAN</div>
+            </div>
+          </div>
+          <div class="playBar-side">
+            <div class="sng-controls controls">
+              <div class="sng-btns">
+                <img id="Previous" src="img/prevsong.svg" alt="" />
+                <img class="Pause" src="img/play.svg" alt="" />
+                <img id="Next" src="img/nextsong.svg" alt="" />
+              </div>
+              <div class="seek-bar">
+                <div class="bar"></div>
+                <div class="current">0:00</div>
+                <div class="total">0:00</div>
+              </div>
+            </div>
+          </div>
+          <div class="side-controls controls">
+            <img class="vol-down" src="img/volume.svg" alt="" />
+
+            <input type="range" name="" id="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

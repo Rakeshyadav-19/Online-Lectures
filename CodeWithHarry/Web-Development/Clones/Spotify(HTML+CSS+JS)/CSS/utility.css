@@ -1,0 +1,29 @@
+.flex {
+  display: flex;
+}
+.flex-full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.pad {
+  padding: 5px;
+}
+
+.mar {
+  margin: 5px;
+}
+
+.fit-img {
+  width: 100%;
+  object-fit: contain;
+}
