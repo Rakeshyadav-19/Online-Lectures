@@ -7,7 +7,7 @@ let cs; //Current song name
 
 // include a songs folder in your dir.
 // and put the structure as me
-let fetchLink = "http://127.0.0.1:3000/Clones/Spotify(HTML+CSS+JS)/songs";
+let fetchLink = "http://127.0.0.1:3000/2Clones/Spotify(HTML+CSS+JS)/songs";
 function secondsToMinutesSeconds(seconds) {
   if (isNaN(seconds) || seconds < 0) {
     return "00:00";
