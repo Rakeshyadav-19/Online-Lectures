@@ -10,7 +10,7 @@ print(len(name))
 #If we don't write ending value it takes length of string
 print(names[0:6])
 
-#If we write in -se value, it do len(variable)-value
+#If we write in -ve value, it do len(variable)-value
 print(name[:-3])
 
 #5-3=2, 5-1=4 => [2:4], from 2 to (4-1)

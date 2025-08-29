@@ -32,6 +32,8 @@ arr = "Raj Ram Rax Rat"
 print(arr.split(" ")) #Makes list element after a space in this case
 print("\n")
 
+print(arr.split("a"))
+
 #Make first letter captial
 arrr = "hello ThIs Is bAd"
 print(arrr)
